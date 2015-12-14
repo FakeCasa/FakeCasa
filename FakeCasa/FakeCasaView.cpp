@@ -52,7 +52,7 @@ BOOL CFakeCasaView::PreCreateWindow(CREATESTRUCT& cs)
 
 // CFakeCasaView drawing
 
-void CFakeCasaView::OnDraw(CDC* /*pDC*/)
+void CFakeCasaView::OnDraw(CDC* pDC)
 {
 	CFakeCasaDoc* pDoc = GetDocument();
 	ASSERT_VALID(pDoc);
@@ -60,6 +60,9 @@ void CFakeCasaView::OnDraw(CDC* /*pDC*/)
 		return;
 
 	// TODO: add draw code for native data here
+	Image m_imgImage(_T("Exemple.jpg"));
+	Graphics grapPicture(*pDC);
+	grapPicture.DrawImage(&m_imgImage, 10, 10);
 }
 
 

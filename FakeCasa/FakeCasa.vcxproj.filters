@@ -19,6 +19,12 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
+    <Filter Include="ManageShape\Header Files">
+      <UniqueIdentifier>{fffacfe4-ae67-4014-9d7b-3bd70aac31e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManageShape\Source Files">
+      <UniqueIdentifier>{334538f2-6f02-4f72-99ea-10a2f39e34c6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -51,6 +57,12 @@
     <ClInclude Include="OutputWnd.h">
       <Filter>MainFrame\Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BaseShape.h">
+      <Filter>ManageShape\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Picture.h">
+      <Filter>ManageShape\Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FakeCasa.cpp">
@@ -73,6 +85,12 @@
     </ClCompile>
     <ClCompile Include="OutputWnd.cpp">
       <Filter>MainFrame\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseShape.cpp">
+      <Filter>ManageShape\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Picture.cpp">
+      <Filter>ManageShape\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
