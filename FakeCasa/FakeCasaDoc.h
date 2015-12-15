@@ -1,7 +1,7 @@
 
 // FakeCasaDoc.h : interface of the CFakeCasaDoc class
 //
-
+#include "BaseShape.h"
 
 #pragma once
 
@@ -14,7 +14,8 @@ protected: // create from serialization only
 
 // Attributes
 public:
-
+	CArray<BaseShape*, BaseShape*> m_arrBaseShape;
+	CString m_csFullPathName;
 // Operations
 public:
 
@@ -39,6 +40,7 @@ protected:
 
 // Generated message map functions
 protected:
+	afx_msg void OnFileOpen();
 	DECLARE_MESSAGE_MAP()
 
 #ifdef SHARED_HANDLERS

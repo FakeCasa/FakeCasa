@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #pragma once
 class BaseShape
 {
@@ -10,8 +11,9 @@ public:
 	BaseShape();
 	~BaseShape();
 public:
-	virtual void DrawShape(CDC cDC);
+	virtual void DrawShape(CDC *cDC);
 	virtual void Resize();
 	virtual void Rotate();
+	virtual void GetFullPathImg(CString csPathName);
 };
 

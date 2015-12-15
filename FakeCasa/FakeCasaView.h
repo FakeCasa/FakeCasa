@@ -1,7 +1,8 @@
 
 // FakeCasaView.h : interface of the CFakeCasaView class
 //
-
+#include "Picture.h"
+#include "BaseShape.h"
 #pragma once
 
 

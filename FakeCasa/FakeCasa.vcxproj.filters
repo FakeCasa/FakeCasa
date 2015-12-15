@@ -25,6 +25,15 @@
     <Filter Include="ManageShape\Source Files">
       <UniqueIdentifier>{334538f2-6f02-4f72-99ea-10a2f39e34c6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ManageFile">
+      <UniqueIdentifier>{79f6ae2c-2efd-4e44-8cc0-c2175cb23706}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManageFile\Header">
+      <UniqueIdentifier>{aa804e1f-fc0a-46ed-8156-2461c216f6f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ManageFile\Source">
+      <UniqueIdentifier>{7271399f-a96c-4bd7-ba6d-8fe28ec09783}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -63,6 +72,9 @@
     <ClInclude Include="Picture.h">
       <Filter>ManageShape\Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MgFileIni.h">
+      <Filter>ManageFile\Header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FakeCasa.cpp">
@@ -77,12 +89,6 @@
     <ClCompile Include="ChildFrm.cpp">
       <Filter>MainFrame\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FakeCasaDoc.cpp">
-      <Filter>MainFrame\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FakeCasaView.cpp">
-      <Filter>MainFrame\Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="OutputWnd.cpp">
       <Filter>MainFrame\Source Files</Filter>
     </ClCompile>
@@ -91,6 +97,15 @@
     </ClCompile>
     <ClCompile Include="Picture.cpp">
       <Filter>ManageShape\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FakeCasaView.cpp">
+      <Filter>MainFrame\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FakeCasaDoc.cpp">
+      <Filter>MainFrame\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MgFileIni.cpp">
+      <Filter>ManageFile\Source</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -22,6 +22,7 @@
 IMPLEMENT_DYNCREATE(CFakeCasaDoc, CDocument)
 
 BEGIN_MESSAGE_MAP(CFakeCasaDoc, CDocument)
+	ON_COMMAND(ID_FILE_OPEN, &CFakeCasaDoc::OnFileOpen)
 END_MESSAGE_MAP()
 
 
@@ -30,7 +31,7 @@ END_MESSAGE_MAP()
 CFakeCasaDoc::CFakeCasaDoc()
 {
 	// TODO: add one-time construction code here
-
+	m_csFullPathName = _T("");
 }
 
 CFakeCasaDoc::~CFakeCasaDoc()
@@ -44,7 +45,7 @@ BOOL CFakeCasaDoc::OnNewDocument()
 
 	// TODO: add reinitialization code here
 	// (SDI documents will reuse this document)
-
+	m_arrBaseShape.RemoveAll();
 	return TRUE;
 }
 
@@ -135,3 +136,21 @@ void CFakeCasaDoc::Dump(CDumpContext& dc) const
 
 
 // CFakeCasaDoc commands
+void CFakeCasaDoc::OnFileOpen()
+{
+	LPCTSTR pszFilter =
+		_T("Bitmap files (*.bmp;*.dib;*.rle)|*.bmp;*.dib;*.rle|")
+		_T("JPEG files (*.jpg;*.jpeg;*.jpe;*.jfif)|*.jpg;*.jpeg;*.jpe;*.jfif||");
+
+	CFileDialog dlgFile(TRUE, NULL, NULL,
+		OFN_HIDEREADONLY,
+		pszFilter,
+		AfxGetMainWnd());
+
+	if (IDOK == dlgFile.DoModal())
+	{
+		m_csFullPathName = dlgFile.GetPathName();
+
+		AfxGetApp()->OpenDocumentFile(m_csFullPathName);
+	}
+}

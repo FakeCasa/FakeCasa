@@ -58,11 +58,11 @@ void CFakeCasaView::OnDraw(CDC* pDC)
 	ASSERT_VALID(pDoc);
 	if (!pDoc)
 		return;
-
+	BaseShape *CurrenShape = new BasePicture();
 	// TODO: add draw code for native data here
-	Image m_imgImage(_T("Exemple.jpg"));
-	Graphics grapPicture(*pDC);
-	grapPicture.DrawImage(&m_imgImage, 10, 10);
+	CurrenShape->GetFullPathImg(pDoc->m_csFullPathName);
+	pDoc->m_arrBaseShape.Add(CurrenShape);
+	pDoc->m_arrBaseShape[0]->DrawShape(pDC);
 }
 
 

@@ -13,7 +13,7 @@ BaseShape::~BaseShape()
 {
 }
 
-void BaseShape::DrawShape(CDC cDC){
+void BaseShape::DrawShape(CDC *cDC){
 
 }
 void BaseShape::Resize(){
@@ -21,4 +21,8 @@ void BaseShape::Resize(){
 }
 void BaseShape::Rotate(){
 
+}
+
+void BaseShape::GetFullPathImg(CString csPathName)
+{
 }

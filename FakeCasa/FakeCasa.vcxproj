@@ -107,6 +107,7 @@
     <ClInclude Include="FakeCasaDoc.h" />
     <ClInclude Include="FakeCasaView.h" />
     <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MgFileIni.h" />
     <ClInclude Include="OutputWnd.h" />
     <ClInclude Include="Picture.h" />
     <ClInclude Include="Resource.h" />
@@ -120,6 +121,7 @@
     <ClCompile Include="FakeCasaDoc.cpp" />
     <ClCompile Include="FakeCasaView.cpp" />
     <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MgFileIni.cpp" />
     <ClCompile Include="OutputWnd.cpp" />
     <ClCompile Include="Picture.cpp" />
     <ClCompile Include="stdafx.cpp">

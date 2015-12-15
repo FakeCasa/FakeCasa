@@ -1,21 +1,19 @@
 #include "BaseShape.h"
-#include <windows.h>
-#include <objidl.h>
-#include <gdiplus.h>
-using namespace Gdiplus;
-#pragma comment (lib,"Gdiplus.lib")
 
 #pragma once
-class BasePicture: BaseShape
+class BasePicture: public BaseShape
 {
 private:
 	Image *m_imgImage;
+	CString m_csFullPath;
 public:
 	BasePicture();
 	~BasePicture();
 public:
-	void DrawShape(CDC cDC);
+	void DrawShape(CDC *cDC);
 	void Resize();
 	void Rotate();
+private:
+	void GetFullPathImg(CString csPathName);
 };
 
